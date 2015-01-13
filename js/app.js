@@ -10,4 +10,8 @@ $(window).scroll(function (event) {
 	} else {
     		$("#navbar").css("border-bottom", "0px")
 	};
+
+	if ($(window).width()<481) {
+    	$("#navbar").css("position", "relative")
+	};
 });

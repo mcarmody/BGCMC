@@ -1,6 +1,36 @@
 @import "settings";
 @import "foundation";
 
+/* Extra shit added by Carmody */
+
+#navbar {
+  max-width: 100%;
+  position: fixed;
+  top:0;
+  z-index: 100;
+}
+
+#banner {
+  border: 0px;
+  margin-top: 60px;
+}
+
+#detail {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+
+#footer {
+  border: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.twitter-timeline {
+    max-height: 400px;
+}
+
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
@@ -38,3 +68,5 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
