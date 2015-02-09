@@ -9071,6 +9071,10 @@ th.hide-for-touch {
 .dropNav {
   display: none;
   position: fixed;
+  width: 100px;
+  margin-left: 27px;
+  padding: 5px;
+  background-color: white;
 }
 
 #banner {

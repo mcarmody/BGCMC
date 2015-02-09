@@ -4,9 +4,9 @@ $(document).ready( function () {
 
 	$(".nav-item").on("click", function() {
 		if($(this).find(".dropNav").css("display")=="none") {
-		    $(".nav-item>.dropNav").css("display", "block");
+		    $(this).find(".dropNav").css("display", "inline-block");
 		} else {
-			$(".nav-item>.dropNav").css("display", "none");
+			$(this).find(".dropNav").css("display", "none");
 		};
 	});
 
