@@ -3,24 +3,20 @@
 $(document).ready( function () {
 
 	$(".nav-item").on("click", function() {
-		if($(this).find(".hiddenNav").is(":hidden")) {
-		    $(this).find(".hiddenNav").slideDown(500)
-		    $(this).css("background-color", "#008CBA").find("a").css("color", "white");
+		if($(this).find(".hiddenNav, .droppedNav").is(":hidden")) {
+		    $(this).find(".hiddenNav, .droppedNav").slideDown(300)
+		    .animate({backgroundColor: "#008CBA"}, {duration: 500, queue: false});
+		    $(this).animate({backgroundColor: "#008CBA"}, 500).find("a").animate({color: "white"}, {queue: false});
 		    delay(500);
-		    $(this).find(".hiddenNav").addClass("droppedNav").removeClass("hiddenNav");
+		    $(this).find(".hiddenNav, .droppedNav").addClass("droppedNav").removeClass("hiddenNav");
 		} else {
-			$(this).find(".hiddenNav").slideUp(300);
+			$(this).find(".hiddenNav, .droppedNav").slideUp(300)
+		    .animate({backgroundColor: "#white"}, {duration: 500, queue: false});
+		 	$(this).animate({backgroundColor: "white"}, {duration: 500, queue: false});
 		 	$(this).css("background-color", "white")
 			$(this).find("a").removeAttr("style");
 		};
-		if($(this).find(".droppedNav").is(":hidden")) {
-		    $(this).find(".droppedNav").slideDown(500)
-		    .addClass("hiddenNav").removeClass("droppedNav");
-		 	$(this).css("background-color", "#008CBA").find("a").css("color", "white");
-		} else {
-			$(this).find(".droppedNav").slideUp(300)
-			$(this).find("a").removeAttr("style");
-		};
+
 	});
 
 	$(window).scroll(function (event) {
