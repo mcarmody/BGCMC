@@ -1,17 +1,28 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
-$(document).foundation();
+$(document).ready( function () {
 
-$(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
+	$(".nav-item").on("click", function() {
+		if($(this).find(".dropNav").css("display")=="none") {
+		    $(".nav-item>.dropNav").css("display", "block");
+		} else {
+			$(".nav-item>.dropNav").css("display", "none");
+		};
+	});
 
-    if (scroll>10) {
-    	$("#navbar").css("border-bottom", "1px solid #999")
-	} else {
-    		$("#navbar").css("border-bottom", "0px")
-	};
+	$(window).scroll(function (event) {
 
-	if ($(window).width()<481) {
-    	$("#navbar").css("position", "relative")
-	};
+	    var scroll = $(window).scrollTop();
+
+	    if (scroll>10) {
+	    	$("#navbar").css("border-bottom", "1px solid #999")
+		} else {
+	    		$("#navbar").css("border-bottom", "0px")
+		};
+
+		if ($(window).width()<481) {
+	    	$("#navbar").css("position", "relative")
+		};
+	});
+
 });
