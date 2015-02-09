@@ -1,6 +1,6 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
-$(document).ready();
+$(document).foundation();
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
