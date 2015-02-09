@@ -9067,12 +9067,17 @@ th.hide-for-touch {
 }
 
 .dropNav {
+  height: 100px;
   display: none;
   position: fixed;
   width: 100px;
   margin-left: 27px;
   padding: 5px;
   background-color: white;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  /*transition: all .5s;*/
+  list-style: none;
 }
 
 #banner {

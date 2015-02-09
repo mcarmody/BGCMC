@@ -3,10 +3,10 @@
 $(document).ready( function () {
 
 	$(".nav-item").on("click", function() {
-		if($(this).find(".dropNav").css("display")=="none") {
-		    $(this).find(".dropNav").css("display", "inline-block");
+		if($(this).find(".dropNav").is(":hidden")) {
+		    $(this).find(".dropNav").slideDown(500);
 		} else {
-			$(this).find(".dropNav").css("display", "none");
+			$(this).find(".dropNav").hide();
 		};
 	});
 
@@ -15,9 +15,14 @@ $(document).ready( function () {
 	    var scroll = $(window).scrollTop();
 
 	    if (scroll>10) {
-	    	$("#navbar").css("border-bottom", "1px solid #999")
+	    	$("#navbar").css("border-bottom", "1px solid #999");
+	    } if (scroll>20) {
+	    	$(".dropNav").css("border", "1px solid #999");
+    		$(".dropNav").css("border-top", "none");
 		} else {
-	    		$("#navbar").css("border-bottom", "0px")
+    		$("#navbar").css("border-bottom", "1px solid white");
+	    	$(".dropNav").css("border", "1px solid white");
+	    	$(".dropNav").css("border-top", "none");
 		};
 
 		if ($(window).width()<481) {
