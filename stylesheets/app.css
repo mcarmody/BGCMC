@@ -9068,6 +9068,11 @@ th.hide-for-touch {
   z-index: 100;
 }
 
+.dropNav {
+  display: none;
+  position: fixed;
+}
+
 #banner {
   border: 0px;
   margin-top: 60px;
