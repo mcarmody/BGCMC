@@ -16,8 +16,28 @@ $(document).ready( function () {
 		 	$(this).css("background-color", "white")
 			$(this).find("a").removeAttr("style");
 		};
-
+		$("nav-item").not(this).find(".hiddenNav, .droppedNav").slideUp(300);
 	});
+
+	// a popup widget for registration
+
+	$(function() {
+	    $( "#register" ).dialog({
+	      autoOpen: false,
+	      show: {
+	        effect: "blind",
+	        duration: 1000
+	      },
+	      hide: {
+	        effect: "explode",
+	        duration: 1000
+	      }
+	    });
+	 
+	    $( "#signup-button" ).click(function() {
+	      $( "#register" ).dialog( "open" );
+	    });
+	  });
 
 	$(window).scroll(function (event) {
 
