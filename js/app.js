@@ -25,17 +25,28 @@ $(document).ready( function () {
 
 	    if (scroll>10) {
 	    	$("#navbar").css("border-bottom", "1px solid #999");
-	    } if (scroll>20) {
-	    	$(".hiddenNav, .droppedNav").css("border", "1px solid #999")
-	    	.css("border-top", "none");
-		} else {
+	    	$(".nav-item").animate({
+	    		borderTopLeftRadius: 0,
+	    		borderTopRightRadius: 0,
+	    		borderBottomLeftRadius: 0,
+	   			borderBottomRightRadius: 0,}, 100);
+	    }  else {
     		$("#navbar").css("border-bottom", "1px solid white");
     		$(".hiddenNav, .droppedNav").css("border", "1px solid #008CBA")
 	    	.css("border-top", "none");
+	    	$(".nav-item").animate({
+	    		borderTopLeftRadius: 0,
+	    		borderTopRightRadius: 0,
+	    		borderBottomLeftRadius: 10,
+	   			borderBottomRightRadius: 10,}, {duration: 100, queue: false});
 		};
+		if (scroll>20) {
+	    	$(".hiddenNav, .droppedNav").css("border", "1px solid #999")
+	    	.css("border-top", "none");
+		}
 
 		if ($(window).width()<481) {
-	    	$("#navbar").css("position", "relative")
+	    	$("#navbar").css("position", "relative");
 		};
 	});
 

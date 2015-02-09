@@ -9066,15 +9066,19 @@ th.hide-for-touch {
   z-index: 100;
 }
 
+.nav-item {
+  border-radius: 0 0 10px 10px;
+}
+
 .hiddenNav {
   height: 100px;
   display: none;
+  width: inherit;
   position: fixed;
-  width: 110px;
-  margin-left: 27px;
-  padding: 5px;
+  background-color: white;
+  margin-left: 10px !important;
+  padding: 0 15px 5px 15px;
   color: white;
-  /*background-color: #008CBA;*/
   border: 1px solid #008CBA;
   border-top: none;
   border-radius: 0 0 10px 10px;

@@ -11300,53 +11300,58 @@ th.hide-for-touch {
 }
 
 /* line 9069, ../scss/app.scss */
+.nav-item {
+  border-radius: 0 0 10px 10px;
+}
+
+/* line 9073, ../scss/app.scss */
 .hiddenNav, .droppedNav {
   height: 100px;
   display: none;
+  width: inherit;
   position: fixed;
-  width: 110px;
-  margin-left: 27px;
-  padding: 5px;
+  background-color: white;
+  margin-left: 10px !important;
+  padding: 0 15px 5px 15px;
   color: white;
-  /*background-color: #008CBA;*/
   border: 1px solid #008CBA;
   border-top: none;
   border-radius: 0 0 10px 10px;
   list-style: none;
 }
 
-/* line 9084, ../scss/app.scss */
+/* line 9088, ../scss/app.scss */
 .droppedNav {
   border: 1px solid #999;
   border-top: none;
 }
 
-/* line 9090, ../scss/app.scss */
+/* line 9094, ../scss/app.scss */
 #banner {
   border: 0px;
   margin-top: 60px;
 }
 
-/* line 9095, ../scss/app.scss */
+/* line 9099, ../scss/app.scss */
 #detail {
   margin-top: 0px;
   margin-bottom: 50px;
   padding-top: 10px;
 }
 
-/* line 9101, ../scss/app.scss */
+/* line 9105, ../scss/app.scss */
 #footer {
   border: 0px;
   padding-bottom: 5px;
   padding-top: 5px;
 }
 
-/* line 9107, ../scss/app.scss */
+/* line 9111, ../scss/app.scss */
 .twitter-timeline {
   max-height: 400px;
 }
 
-/* line 9111, ../scss/app.scss */
+/* line 9115, ../scss/app.scss */
 #signup-button {
   background-color: #008CBA;
   padding: 10px 15px 10px 15px;
@@ -11356,14 +11361,14 @@ th.hide-for-touch {
   font-weight: 300;
 }
 
-/* line 9120, ../scss/app.scss */
+/* line 9124, ../scss/app.scss */
 .logo {
   height: 40px;
   float: left;
   margin: 6px 0 4px 0;
 }
 
-/* line 9126, ../scss/app.scss */
+/* line 9130, ../scss/app.scss */
 #signup-button:hover {
   background-color: #00607F;
 }
