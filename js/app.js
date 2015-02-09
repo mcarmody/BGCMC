@@ -6,7 +6,7 @@ $(document).ready( function () {
 		if($(this).find(".dropNav").is(":hidden")) {
 		    $(this).find(".dropNav").slideDown(500);
 		} else {
-			$(this).find(".dropNav").hide();
+			$(this).find(".dropNav").slideUp(300);
 		};
 	});
 
