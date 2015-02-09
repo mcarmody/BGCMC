@@ -9056,7 +9056,7 @@ th.hide-for-touch {
   }
 }
 
-/* Extra shit added by Carmody */
+/* Extra stuff added by Carmody */
 
 #navbar {
   max-width: 100%;
@@ -9066,18 +9066,26 @@ th.hide-for-touch {
   z-index: 100;
 }
 
-.dropNav {
+.hiddenNav {
   height: 100px;
   display: none;
   position: fixed;
-  width: 100px;
+  width: 110px;
   margin-left: 27px;
   padding: 5px;
-  background-color: white;
+  color: white;
+  background-color: #008CBA;
+  border: 1px solid #008CBA;
   border-top: none;
   border-radius: 0 0 10px 10px;
   /*transition: all .5s;*/
   list-style: none;
+}
+
+.droppedNav {
+  @extend .hiddenNav;
+  border: 1px solid #999;
+  border-top: none;
 }
 
 #banner {
