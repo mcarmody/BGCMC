@@ -9,7 +9,9 @@ $(document).ready( function () {
 		    $(this).animate({backgroundColor: "#008CBA"}, 500).find("a").animate({color: "white"}, {queue: false});
 		    delay(500);
 		    $(this).find(".hiddenNav, .droppedNav").addClass("droppedNav").removeClass("hiddenNav");
-		} else {
+		}
+
+		else {
 			$(this).find(".hiddenNav, .droppedNav").slideUp(300)
 		    .animate({backgroundColor: "#white"}, {duration: 500, queue: false});
 		 	$(this).animate({backgroundColor: "white"}, {duration: 500, queue: false});
@@ -49,7 +51,7 @@ $(document).ready( function () {
 	    		borderTopLeftRadius: 0,
 	    		borderTopRightRadius: 0,
 	    		borderBottomLeftRadius: 0,
-	   			borderBottomRightRadius: 0,}, 100);
+	   			borderBottomRightRadius: 0,}, {duration: 100, queue: false});
 	    }  else {
     		$("#navbar").css("border-bottom", "1px solid white");
     		$(".hiddenNav, .droppedNav").css("border", "1px solid #008CBA")
