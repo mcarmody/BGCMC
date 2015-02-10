@@ -21,7 +21,7 @@ $(document).ready( function () {
 
 	$("#signup-button").on("click", function() {
 
-		$(".popup").fadeToggle({duration: 500});
+		$(".popup-container").fadeToggle({duration: 300});
 
 	});
 
