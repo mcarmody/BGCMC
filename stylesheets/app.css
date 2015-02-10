@@ -11372,3 +11372,17 @@ th.hide-for-touch {
 #signup-button:hover {
   background-color: #00607F;
 }
+
+/* Application Popup Styling */
+/* line 9136, ../scss/app.scss */
+.popup {
+  position: fixed;
+  display: none;
+  width: 360px;
+  height: 500px;
+  background-color: white;
+  top: 100px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  left: 35%;
+}
